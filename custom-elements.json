@@ -2,8 +2,8 @@
   "version": "experimental",
   "tags": [
     {
-      "name": "my-element",
-      "path": "./my-element.js",
+      "name": "video-grid",
+      "path": "./video-grid.js",
       "description": "An example element.",
       "attributes": [
         {
@@ -49,8 +49,8 @@
       ]
     },
     {
-      "name": "my-element",
-      "path": "./docs-/my-element.bundled.js",
+      "name": "video-grid",
+      "path": "./docs-/video-grid.bundled.js",
       "attributes": [
         {
           "name": "name",

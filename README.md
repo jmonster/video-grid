@@ -1,6 +1,20 @@
-# LitElement JavaScript starter 
+# video-grid Web Component
 
-This project includes a sample component using LitElement with JavaScript.
+`<video-grid>` is a WebComponent for arranging multiple video streams into a grid. It was created with LitElement.
+
+## Usage
+
+```html
+<video-grid>
+  <video slot="video" controls="controls" preload='none' poster="https://frinkiac.com/img/S11E02/775960.jpg">
+    <source id='mp4' src="https://frinkiac.com/mp4/S11E02/775960/783760.mp4?b64lines=" type='video/mp4' />
+  </video>
+</video-grid>
+```
+
+
+
+# video-grid LitElement Project
 
 ## Setup
 

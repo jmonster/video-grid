@@ -3,18 +3,23 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>&lt;my-element> Demo</title>
-    <script type="module" src="../my-element.js"></script>
+    <title>&lt;video-grid> Demo</title>
+    <script
+      src="../video-grid.js"
+      type="module"></script>
     <style>
-      p {
-        border: solid 1px blue;
-        padding: 8px;
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
       }
     </style>
   </head>
   <body>
-    <my-element>
-      <p>This is child content</p>
-    </my-element>
+    <video-grid>
+      <video slot="video" playsinline controls="controls" preload='none' poster="https://frinkiac.com/img/S11E02/775960.jpg">
+        <source id='mp4' src="https://frinkiac.com/mp4/S11E02/775960/783760.mp4?b64lines=" type='video/mp4' />
+      </video>
+    </video-grid>
   </body>
 </html>

@@ -1,18 +1,18 @@
 {
-  "name": "lit-element-starter-js",
-  "version": "0.0.0",
-  "description": "A simple web component",
-  "main": "my-element.js",
-  "module": "my-element.js",
+  "name": "@jmonster/video-grid",
+  "version": "0.0.1",
+  "description": "Arranges video elements into a dang ol grid",
+  "main": "video-grid.js",
+  "module": "video-grid.js",
   "type": "module",
   "scripts": {
-    "lint": "lit-analyzer my-element.js && eslint '**/*.js'",
-    "format": "prettier my-element.js test/* --write",
+    "lint": "lit-analyzer video-grid.js && eslint '**/*.js'",
+    "format": "prettier video-grid.js test/* --write",
     "docs": "npm run docs:clean && npm run analyze && npm run docs:build && npm run docs:assets && npm run docs:gen",
     "docs:clean": "rimraf docs",
     "docs:gen": "eleventy --config=.eleventy.cjs",
     "docs:gen:watch": "eleventy --config=.eleventy.cjs --watch",
-    "docs:build": "rollup -c --file docs/my-element.bundled.js",
+    "docs:build": "rollup -c --file docs/video-grid.bundled.js",
     "docs:assets": "cp node_modules/prismjs/themes/prism-okaidia.css docs/",
     "docs:serve": "es-dev-server --root-dir=docs --node-resolve --watch",
     "analyze": "wca analyze \"**/*.js\" --outFile custom-elements.json",
@@ -21,7 +21,7 @@
     "test:watch": "karma start karma.conf.cjs --auto-watch=true --single-run=false",
     "test:update-snapshots": "karma start karma.conf.cjs --update-snapshots",
     "test:prune-snapshots": "karma start karma.conf.cjs --prune-snapshots",
-    "checksize": "rollup -c ; cat my-element.bundled.js | gzip -9 | wc -c ; rm my-element.bundled.js",
+    "checksize": "rollup -c ; cat video-grid.bundled.js | gzip -9 | wc -c ; rm video-grid.bundled.js",
     "build": "echo \"This is not a TypeScript project, so no need to build.\""
   },
   "keywords": [
@@ -29,8 +29,8 @@
     "lit-element",
     "javascript"
   ],
-  "author": "The Polymer Authors",
-  "license": "BSD-3-Clause",
+  "author": "Johnny Domino",
+  "license": "TBD",
   "dependencies": {
     "lit-element": "^2.3.1"
   },
